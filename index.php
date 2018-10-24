@@ -31,13 +31,13 @@
 				while($data = mysqli_fetch_array($qry)){
 			 ?>
 		<tr>
-			<td><?php echo $data['id']; ?></td>
+			<td align="center"><?php echo $data['id']; ?></td>
 			<td><?php echo $data['username']; ?></td>
 			<td><?php echo $data['password']; ?></td>
 			<td><?php echo $data['level']; ?></td>
 			<td><?php echo $data['fullname']; ?></td>
 
-			<td>
+			<td align="center">
 				<a href="edit.php?id=<?php echo $data['id']; ?>">Edit</a>
 				<a href="delete.php?id=<?php echo $data['id']; ?>">Delete</a>
 			</td>

@@ -7,7 +7,8 @@
   <body>
     <h3>Edit Data</h3>
      <?php
-      $koneksi = mysqli_connect("localhost","root","","data_siswa");
+      include "koneksi.php"; 
+      mysqli_connect("localhost","root","","data_siswa");
       $id = $_GET['id'];
       $qry = mysqli_query($koneksi,"SELECT * FROM data WHERE id='$id'");
       $data = mysqli_fetch_array($qry);
