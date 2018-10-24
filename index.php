@@ -41,6 +41,8 @@
 	<?php  
 }
 ?>
+
+ <a href="form.php"> Tambah Data</a>
 	</table>
 </body>
 </html>
